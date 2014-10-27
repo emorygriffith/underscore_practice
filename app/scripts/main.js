@@ -4,11 +4,20 @@ var emptyArray = [];
 
 //Size
 
-emory.size = function(x) {
+emory.size = function() {
 
-  console.log(x.length)
+  $('.answer')
+
+  $('.container').click(function(x){
+
+    $('.answer').append("<span>" + emptyArray + "</span>");
+
+  });
 
 };
+
+// console.log(x.length);
+
 
 emory.size(sampleArray);
 
@@ -37,4 +46,12 @@ emory.contains = function(x, y) {
   x.forEach(function(z){
     if (y==z) console.log(y);
   });
+};
+
+var hey = {"hey hey hey hey"};
+
+emory.greeting = function() {
+
+  $('.container').html(hey);
+
 };
